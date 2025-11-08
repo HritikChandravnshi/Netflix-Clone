@@ -24,7 +24,7 @@ It replicates the official Netflix homepage UI with animations, responsive desig
 
 ## 🚀 Live Demo
 
-🎥 **Check it out here:** [Netflix Clone Demo](https://HritikChandravnshi.github.io/netflix-clone/)  
+🎥 **Check it out here:** [Netflix Clone Demo](https://Hritikchandravnshi.github.io/netflix-clone/)  
 *(Update this link after deploying on GitHub Pages)*
 
 ---
