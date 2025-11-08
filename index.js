@@ -69,6 +69,24 @@ const translations = {
       "Ready to watch? Enter your email to create or restart your membership.",
     footerQ: "Questions? Call 000-800-040-1843",
     footerNote: "Netflix India",
+    footerLinks: [
+      "FAQ",
+      "Investor Relations",
+      "Privacy",
+      "Speed Test",
+      "Help Centre",
+      "Jobs",
+      "Cookie Preferences",
+      "Legal Notices",
+      "Account",
+      "Ways to Watch",
+      "Corporate Information",
+      "Only on Netflix",
+      "Media Centre",
+      "Terms of Use",
+      "Contact Us",
+    ],
+
   },
 
   hindi: {
@@ -115,6 +133,24 @@ const translations = {
       "देखना शुरू करने के लिए, अपना ईमेल दर्ज करें या अपनी सदस्यता फिर से शुरू करें।",
     footerQ: "प्रश्न हैं? कॉल करें 000-800-040-1843",
     footerNote: "नेटफ्लिक्स इंडिया",
+    footerLinks: [
+      "सामान्य प्रश्न",
+      "निवेशक संबंध",
+      "गोपनीयता",
+      "गति परीक्षण",
+      "सहायता केंद्र",
+      "नौकरियां",
+      "कुकी प्राथमिकताएँ",
+      "कानूनी नोटिस",
+      "खाता",
+      "देखने के तरीके",
+      "कॉर्पोरेट जानकारी",
+      "केवल नेटफ्लिक्स पर",
+      "मीडिया केंद्र",
+      "उपयोग की शर्तें",
+      "हमसे संपर्क करें",
+    ],
+
   },
 };
 
@@ -179,6 +215,14 @@ function switchLanguage(lang) {
     t.readyText;
   document.querySelector(".footer__row__1 h4").textContent = t.footerQ;
   document.querySelector(".footer__row__4 p").textContent = t.footerNote;
+  // 🌐 Footer link translations
+const footerTexts = document.querySelectorAll(".footer__row__2 p");
+footerTexts.forEach((p, index) => {
+  if (t.footerLinks[index]) {
+    p.textContent = t.footerLinks[index];
+  }
+});
+
 }
 
 // Dropdown listener
